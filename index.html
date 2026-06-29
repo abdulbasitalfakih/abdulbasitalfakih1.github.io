@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
   <title>Abdul Basit Al Fakih • Future Network Engineer</title>
-  <!-- Font Awesome 6 (gratis) -->
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <!-- AOS Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <!-- Google Font (inter) -->
+  <!-- Google Font Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
@@ -21,8 +21,8 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0a0f1f;
-      color: #eef5ff;
+      background: #f5f9ff;  /* putih kebiruan */
+      color: #0b1a30;
       overflow-x: hidden;
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -41,7 +41,7 @@
       position: fixed;
       inset: 0;
       z-index: 99999;
-      background: #070b17;
+      background: #eef5ff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,27 +56,26 @@
     .loader-logo {
       font-size: 4rem;
       font-weight: 800;
-      background: linear-gradient(135deg, #00e5ff, #4fc3f7);
+      background: linear-gradient(135deg, #0066cc, #00b8d9);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+      text-shadow: 0 0 30px rgba(0, 102, 204, 0.2);
       letter-spacing: 4px;
       margin-bottom: 2rem;
       animation: pulseGlow 1.8s infinite alternate;
     }
     @keyframes pulseGlow {
-      0% { text-shadow: 0 0 10px #00e5ff55; }
-      100% { text-shadow: 0 0 40px #00e5ffbb, 0 0 80px #4fc3f766; }
+      0% { text-shadow: 0 0 10px #0066cc33; }
+      100% { text-shadow: 0 0 40px #0066cc88, 0 0 80px #00b8d966; }
     }
     .loader-scan {
       width: 260px;
       height: 4px;
-      background: #1f2a44;
+      background: #c0d8f0;
       border-radius: 4px;
       overflow: hidden;
       position: relative;
-      margin-top: 0.5rem;
-      box-shadow: 0 0 20px #00e5ff44;
+      box-shadow: 0 0 20px #0066cc33;
     }
     .loader-scan::after {
       content: '';
@@ -85,7 +84,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, #00e5ff, #4fc3f7, transparent);
+      background: linear-gradient(90deg, transparent, #0066cc, #00b8d9, transparent);
       animation: scanLine 1.6s infinite linear;
     }
     @keyframes scanLine {
@@ -97,14 +96,14 @@
       max-width: 300px;
       margin-top: 1.2rem;
       height: 6px;
-      background: #141f33;
+      background: #d0e2f5;
       border-radius: 12px;
       overflow: hidden;
     }
     .loader-progress-bar {
       width: 0%;
       height: 100%;
-      background: linear-gradient(90deg, #00e5ff, #4fc3f7);
+      background: linear-gradient(90deg, #0066cc, #00b8d9);
       border-radius: 12px;
       animation: loadProgress 2.4s forwards;
     }
@@ -114,14 +113,14 @@
     }
     .loader-text {
       margin-top: 1.5rem;
-      color: #8aa3d0;
-      font-weight: 300;
+      color: #1f4a7a;
+      font-weight: 400;
       letter-spacing: 2px;
       font-size: 0.9rem;
-      opacity: 0.7;
+      opacity: 0.8;
     }
 
-    /* ===== PARTICLE BG ===== */
+    /* ===== PARTICLE BG (putih lembut) ===== */
     #particles-js {
       position: fixed;
       top: 0;
@@ -132,19 +131,19 @@
       pointer-events: none;
     }
 
-    /* ===== CYBER GRID OVERLAY ===== */
+    /* ===== CYBER GRID (sangat halus) ===== */
     .cyber-grid {
       position: fixed;
       inset: 0;
       z-index: 0;
       pointer-events: none;
       background-image: 
-        linear-gradient(rgba(0, 229, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 229, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(0, 102, 204, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 102, 204, 0.04) 1px, transparent 1px);
       background-size: 60px 60px;
     }
 
-    /* ===== MATRIX RAIN (canvas) ===== */
+    /* ===== MATRIX RAIN (soft cyan) ===== */
     #matrix-canvas {
       position: fixed;
       top: 0;
@@ -153,7 +152,7 @@
       height: 100%;
       z-index: 0;
       pointer-events: none;
-      opacity: 0.15;
+      opacity: 0.08;
     }
 
     /* ===== MAIN CONTENT ===== */
@@ -162,14 +161,14 @@
       z-index: 2;
     }
 
-    /* ===== GLASS CARD ===== */
+    /* ===== GLASS CARD (putih bening) ===== */
     .glass {
-      background: rgba(10, 20, 40, 0.45);
-      backdrop-filter: blur(12px) saturate(180%);
-      -webkit-backdrop-filter: blur(12px) saturate(180%);
-      border: 1px solid rgba(0, 229, 255, 0.15);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      border: 1px solid rgba(0, 102, 204, 0.15);
       border-radius: 32px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 229, 255, 0.05);
+      box-shadow: 0 20px 50px rgba(0, 20, 60, 0.08), 0 0 30px rgba(0, 102, 204, 0.03);
     }
 
     /* ===== NAV ===== */
@@ -180,10 +179,10 @@
       width: 100%;
       z-index: 999;
       padding: 1rem 2rem;
-      background: rgba(7, 11, 23, 0.7);
+      background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 102, 204, 0.08);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -191,7 +190,7 @@
     .nav-brand {
       font-weight: 700;
       font-size: 1.3rem;
-      background: linear-gradient(135deg, #b0e0ff, #00e5ff);
+      background: linear-gradient(135deg, #004d99, #00a8cc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 1px;
@@ -199,11 +198,11 @@
     .nav-links {
       display: flex;
       gap: 2rem;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 0.95rem;
     }
     .nav-links a {
-      color: #b8d0f0;
+      color: #0b2a4a;
       transition: 0.3s;
       position: relative;
     }
@@ -214,11 +213,11 @@
       left: 0;
       width: 0%;
       height: 2px;
-      background: #00e5ff;
+      background: #0066cc;
       transition: 0.3s;
     }
     .nav-links a:hover {
-      color: #fff;
+      color: #003366;
     }
     .nav-links a:hover::after {
       width: 100%;
@@ -226,7 +225,7 @@
     .nav-hamburger {
       display: none;
       font-size: 1.6rem;
-      color: #b0e0ff;
+      color: #004d99;
       cursor: pointer;
     }
 
@@ -248,7 +247,7 @@
       font-size: 3.8rem;
       font-weight: 800;
       line-height: 1.1;
-      background: linear-gradient(135deg, #ffffff 20%, #a0d8ff 80%);
+      background: linear-gradient(135deg, #003366 20%, #0077b3 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 0.5rem;
@@ -256,12 +255,15 @@
     .hero-text .sub {
       font-size: 1.6rem;
       font-weight: 300;
-      color: #b8d0f0;
+      color: #1a4a7a;
       margin-bottom: 0.75rem;
       min-height: 3.2rem;
     }
     .hero-text .typed-cursor {
-      color: #00e5ff;
+      color: #0066cc;
+    }
+    .hero-text p {
+      color: #1a4a7a;
     }
     .hero-buttons {
       display: flex;
@@ -281,29 +283,31 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      border: 1px solid rgba(0, 229, 255, 0.3);
-      color: #cce4ff;
-      background: rgba(0, 229, 255, 0.05);
+      border: 1px solid rgba(0, 102, 204, 0.25);
+      color: #003366;
+      background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(4px);
     }
     .btn-primary {
-      background: linear-gradient(135deg, #00b8d9, #0077be);
+      background: linear-gradient(135deg, #0066cc, #0099cc);
       border: none;
       color: #fff;
-      box-shadow: 0 0 30px #00b8d955;
+      box-shadow: 0 0 30px #0066cc44;
     }
     .btn-primary:hover {
       transform: scale(1.04);
-      box-shadow: 0 0 50px #00b8d988;
+      box-shadow: 0 0 50px #0066cc77;
     }
     .btn-outline {
-      border: 1px solid #4fc3f7;
-      color: #b0e0ff;
+      border: 1px solid #0066cc;
+      color: #003366;
+      background: rgba(255, 255, 255, 0.7);
     }
     .btn-outline:hover {
-      background: #00e5ff22;
-      box-shadow: 0 0 30px #00e5ff33;
+      background: #0066cc11;
+      box-shadow: 0 0 30px #0066cc22;
     }
+
     /* foto profil hero */
     .hero-photo {
       display: flex;
@@ -318,14 +322,14 @@
       border-radius: 30px;
       position: relative;
       overflow: hidden;
-      background: #0f1a2f;
-      border: 2px solid rgba(0, 229, 255, 0.25);
-      box-shadow: 0 0 60px rgba(0, 229, 255, 0.15), inset 0 0 60px rgba(0, 229, 255, 0.05);
+      background: #dce8f5;
+      border: 2px solid rgba(0, 102, 204, 0.2);
+      box-shadow: 0 0 60px rgba(0, 102, 204, 0.08), inset 0 0 60px rgba(0, 102, 204, 0.02);
       transition: 0.4s;
     }
     .photo-frame:hover {
-      box-shadow: 0 0 80px rgba(0, 229, 255, 0.4);
-      border-color: #00e5ff;
+      box-shadow: 0 0 80px rgba(0, 102, 204, 0.25);
+      border-color: #0066cc;
       transform: scale(1.01);
     }
     .photo-frame img {
@@ -334,24 +338,24 @@
       object-fit: cover;
       display: block;
       transition: 0.4s;
-      filter: brightness(1.05) contrast(1.05);
+      filter: brightness(1.02) contrast(1.02);
     }
     .photo-frame:hover img {
-      filter: brightness(1.1) contrast(1.1);
+      filter: brightness(1.06) contrast(1.06);
     }
-    /* neon ring animasi */
+    /* neon ring animasi (biru/cyan) */
     .neon-ring {
       position: absolute;
       inset: -10px;
       border-radius: 40px;
       border: 2px solid transparent;
-      background: conic-gradient(from 0deg, #00e5ff, #4fc3f7, #00b8d9, #00e5ff) border-box;
+      background: conic-gradient(from 0deg, #0066cc, #00b8d9, #0088cc, #0066cc) border-box;
       -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
       animation: spinRing 6s linear infinite;
       pointer-events: none;
-      opacity: 0.7;
+      opacity: 0.5;
     }
     @keyframes spinRing {
       0% { transform: rotate(0deg); }
@@ -364,11 +368,10 @@
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-12px); }
     }
-    /* hologram effect overlay */
     .hologram-overlay {
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 30% 40%, rgba(0, 229, 255, 0.08), transparent 70%);
+      background: radial-gradient(circle at 30% 40%, rgba(0, 102, 204, 0.05), transparent 70%);
       pointer-events: none;
       mix-blend-mode: overlay;
     }
@@ -379,21 +382,21 @@
     }
     .about-card {
       padding: 3.5rem;
-      background: rgba(10, 20, 40, 0.5);
+      background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
       border-radius: 40px;
-      border: 1px solid rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 102, 204, 0.08);
     }
     .about-card h2 {
       font-size: 2.6rem;
       font-weight: 700;
       margin-bottom: 1.8rem;
-      background: linear-gradient(135deg, #b0e0ff, #00e5ff);
+      background: linear-gradient(135deg, #004080, #0099cc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .about-card p {
-      color: #c8dfff;
+      color: #0b2a4a;
       font-size: 1.1rem;
       max-width: 800px;
       line-height: 1.9;
@@ -410,34 +413,34 @@
       margin-top: 2rem;
     }
     .skill-item {
-      background: rgba(10, 20, 40, 0.4);
+      background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(8px);
       padding: 1.8rem 1.5rem;
       border-radius: 28px;
-      border: 1px solid rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 102, 204, 0.06);
       transition: 0.3s;
     }
     .skill-item:hover {
-      border-color: #00e5ff66;
-      box-shadow: 0 0 30px #00e5ff22;
+      border-color: #0066cc66;
+      box-shadow: 0 0 30px #0066cc11;
       transform: translateY(-6px);
     }
     .skill-item h4 {
-      color: #b0e0ff;
+      color: #003366;
       margin-bottom: 0.8rem;
       font-weight: 600;
     }
     .progress-bar {
       width: 100%;
       height: 8px;
-      background: #1f2a44;
+      background: #d0dff0;
       border-radius: 20px;
       overflow: hidden;
     }
     .progress-fill {
       height: 100%;
       width: 0%;
-      background: linear-gradient(90deg, #00b8d9, #4fc3f7);
+      background: linear-gradient(90deg, #0066cc, #00b8d9);
       border-radius: 20px;
       transition: width 1.2s ease;
     }
@@ -448,20 +451,20 @@
     }
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
     .project-card {
-      background: rgba(10, 20, 40, 0.35);
+      background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(8px);
-      padding: 2rem 1.5rem;
+      padding: 2rem 1.8rem;
       border-radius: 32px;
-      border: 1px solid rgba(0, 229, 255, 0.05);
+      border: 1px solid rgba(0, 102, 204, 0.06);
       transition: 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-      text-align: center;
       position: relative;
       overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
     }
     .project-card::before {
       content: '';
@@ -470,28 +473,33 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle at 30% 40%, rgba(0, 229, 255, 0.02), transparent 70%);
+      background: radial-gradient(circle at 30% 40%, rgba(0, 102, 204, 0.03), transparent 70%);
       opacity: 0;
       transition: 0.5s;
       pointer-events: none;
     }
     .project-card:hover {
       transform: translateY(-10px) scale(1.01);
-      border-color: #4fc3f766;
-      box-shadow: 0 20px 40px #00000066, 0 0 40px #00e5ff22;
+      border-color: #0066cc66;
+      box-shadow: 0 20px 40px rgba(0, 20, 60, 0.06), 0 0 40px #0066cc11;
     }
     .project-card:hover::before {
       opacity: 1;
     }
     .project-card i {
       font-size: 2.6rem;
-      color: #00e5ff;
-      margin-bottom: 1rem;
+      color: #0066cc;
+      margin-bottom: 0.8rem;
     }
     .project-card h4 {
-      font-weight: 600;
-      color: #e0f0ff;
-      margin-bottom: 0.3rem;
+      font-weight: 700;
+      color: #003366;
+      margin-bottom: 0.4rem;
+    }
+    .project-card p {
+      color: #1a4a7a;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     /* ===== ACHIEVEMENTS ===== */
@@ -505,21 +513,21 @@
       text-align: center;
     }
     .achieve-item {
-      background: rgba(10, 20, 40, 0.3);
+      background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(6px);
       padding: 2rem 0.5rem;
       border-radius: 30px;
-      border: 1px solid rgba(0, 229, 255, 0.05);
+      border: 1px solid rgba(0, 102, 204, 0.06);
     }
     .achieve-item .number {
       font-size: 2.8rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #b0e0ff, #00e5ff);
+      background: linear-gradient(135deg, #004080, #0099cc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .achieve-item .label {
-      color: #90b0d8;
+      color: #1a4a7a;
       font-size: 0.95rem;
       margin-top: 0.2rem;
     }
@@ -534,28 +542,28 @@
       gap: 3rem;
     }
     .contact-form {
-      background: rgba(10, 20, 40, 0.3);
+      background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(10px);
       padding: 2.5rem;
       border-radius: 40px;
-      border: 1px solid rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 102, 204, 0.06);
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 1rem 1.2rem;
       margin-bottom: 1.2rem;
       border-radius: 60px;
-      border: 1px solid #1f2a44;
-      background: rgba(0, 20, 40, 0.5);
-      color: #e0f0ff;
+      border: 1px solid #c8d8ec;
+      background: rgba(255, 255, 255, 0.6);
+      color: #003366;
       font-size: 1rem;
       backdrop-filter: blur(4px);
       transition: 0.3s;
     }
     .contact-form input:focus, .contact-form textarea:focus {
-      border-color: #00e5ff;
+      border-color: #0066cc;
       outline: none;
-      box-shadow: 0 0 30px #00e5ff22;
+      box-shadow: 0 0 30px #0066cc22;
     }
     .contact-form textarea {
       min-height: 120px;
@@ -573,31 +581,31 @@
       align-items: center;
       gap: 1rem;
       font-size: 1.2rem;
-      color: #b8d0f0;
+      color: #0b2a4a;
       transition: 0.3s;
       padding: 0.8rem 1.2rem;
       border-radius: 60px;
-      background: rgba(10, 20, 40, 0.2);
+      background: rgba(255, 255, 255, 0.4);
       backdrop-filter: blur(6px);
       border: 1px solid transparent;
     }
     .contact-info .social-item:hover {
-      border-color: #00e5ff55;
-      background: rgba(0, 229, 255, 0.05);
+      border-color: #0066cc55;
+      background: rgba(0, 102, 204, 0.04);
       transform: translateX(6px);
     }
     .contact-info .social-item i {
       font-size: 1.8rem;
-      color: #00e5ff;
+      color: #0066cc;
       width: 2.2rem;
     }
 
     /* ===== FOOTER ===== */
     footer {
       padding: 2.5rem 0;
-      border-top: 1px solid rgba(0, 229, 255, 0.05);
+      border-top: 1px solid rgba(0, 102, 204, 0.06);
       text-align: center;
-      color: #6a8bb0;
+      color: #3a6a9a;
       font-size: 0.9rem;
       letter-spacing: 1px;
     }
@@ -619,13 +627,14 @@
         position: absolute;
         top: 70px;
         right: 2rem;
-        background: rgba(7, 11, 23, 0.95);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
         padding: 2rem;
         border-radius: 30px;
-        border: 1px solid rgba(0, 229, 255, 0.1);
+        border: 1px solid rgba(0, 102, 204, 0.1);
         gap: 1.4rem;
         min-width: 180px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.04);
       }
       .photo-frame { max-width: 300px; margin: 0 auto; }
     }
@@ -645,7 +654,7 @@
     <div class="loader-logo">ABN</div>
     <div class="loader-scan"></div>
     <div class="loader-progress"><div class="loader-progress-bar" id="progressBar"></div></div>
-    <div class="loader-text">BOOTING NETWORK...</div>
+    <div class="loader-text">MEMUAT PORTOFOLIO...</div>
   </div>
 
   <!-- ===== PARTICLE BG ===== -->
@@ -659,7 +668,7 @@
 
   <!-- ===== NAV ===== -->
   <nav>
-    <div class="nav-brand"><i class="fas fa-network-wired" style="margin-right: 8px; color:#00e5ff;"></i>ABN</div>
+    <div class="nav-brand"><i class="fas fa-network-wired" style="margin-right: 8px; color:#0066cc;"></i>ABN</div>
     <div class="nav-hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
     <div class="nav-links" id="navLinks">
       <a href="#hero">Beranda</a>
@@ -681,8 +690,8 @@
           <div class="sub">
             <span id="typed-text"></span>
           </div>
-          <p style="color:#9bb8e6; margin: 1rem 0 0.5rem; font-size:1.05rem;">
-            <i class="fas fa-microchip" style="color:#00e5ff;"></i> TJKT • Network Enthusiast
+          <p style="margin: 1rem 0 0.5rem; font-size:1.05rem;">
+            <i class="fas fa-microchip" style="color:#0066cc;"></i> TJKT • Network Enthusiast
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
@@ -693,7 +702,7 @@
         <div class="hero-photo" data-aos="fade-left" data-aos-duration="1200">
           <div class="photo-frame floating-float" id="profileFrame">
             <!-- GANTI src DENGAN FOTO YANG DIUPLOAD (base64 atau url) -->
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='440' viewBox='0 0 400 440'%3E%3Crect width='400' height='440' fill='%231a2740'/%3E%3Ctext x='30' y='200' font-family='Inter' font-size='24' fill='%2300e5ff'%3E📸 Foto Profil%3C/text%3E%3Ctext x='30' y='250' font-family='Inter' font-size='18' fill='%2380b0e0'%3EUpload foto Anda%3C/text%3E%3C/svg%3E" alt="Abdul Basit Al Fakih" id="profileImage" />
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='440' viewBox='0 0 400 440'%3E%3Crect width='400' height='440' fill='%23dce8f5'/%3E%3Ctext x='40' y='200' font-family='Inter' font-size='26' fill='%230066cc'%3E📸 Foto Profil%3C/text%3E%3Ctext x='40' y='250' font-family='Inter' font-size='18' fill='%231a4a7a'%3EUpload foto Anda%3C/text%3E%3C/svg%3E" alt="Abdul Basit Al Fakih" id="profileImage" />
             <div class="neon-ring"></div>
             <div class="hologram-overlay"></div>
           </div>
@@ -705,7 +714,7 @@
     <section id="about">
       <div class="container">
         <div class="about-card" data-aos="fade-up" data-aos-duration="1000">
-          <h2><i class="fas fa-user-astronaut" style="margin-right: 14px; color:#00e5ff;"></i>Tentang Saya</h2>
+          <h2><i class="fas fa-user-astronaut" style="margin-right: 14px; color:#0066cc;"></i>Tentang Saya</h2>
           <p>
             Saya adalah siswa SMK jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT) yang memiliki minat besar di bidang jaringan komputer, administrasi sistem, dan teknologi informasi. Saya telah mempelajari dasar-dasar Linux, MikroTik, Cisco, AWS Cloud, serta virtualisasi, dan terus mengembangkan kemampuan melalui pembelajaran maupun praktik. Saya merupakan pribadi yang disiplin, bertanggung jawab, mudah beradaptasi, serta mampu bekerja sama dalam tim maupun secara mandiri. Melalui program Praktik Kerja Lapangan (PKL), saya ingin menambah pengalaman, meningkatkan keterampilan teknis, serta memberikan kontribusi terbaik bagi perusahaan.
           </p>
@@ -716,7 +725,7 @@
     <!-- SKILLS -->
     <section id="skills">
       <div class="container">
-        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#b0e0ff,#00e5ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem;" data-aos="fade-up"><i class="fas fa-microchip" style="margin-right:16px; color:#00e5ff; -webkit-text-fill-color:initial;"></i>Keahlian</h2>
+        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#004080,#0099cc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem;" data-aos="fade-up"><i class="fas fa-microchip" style="margin-right:16px; color:#0066cc; -webkit-text-fill-color:initial;"></i>Keahlian</h2>
         <div class="skills-grid">
           <div class="skill-item" data-aos="zoom-in"><h4>Networking</h4><div class="progress-bar"><div class="progress-fill" data-width="88"></div></div></div>
           <div class="skill-item" data-aos="zoom-in" data-aos-delay="50"><h4>Linux</h4><div class="progress-bar"><div class="progress-fill" data-width="82"></div></div></div>
@@ -730,19 +739,51 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (dengan deskripsi lengkap) -->
     <section id="projects">
       <div class="container">
-        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#b0e0ff,#00e5ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem;" data-aos="fade-up"><i class="fas fa-project-diagram" style="margin-right:16px; color:#00e5ff; -webkit-text-fill-color:initial;"></i>Proyek</h2>
+        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#004080,#0099cc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem;" data-aos="fade-up"><i class="fas fa-project-diagram" style="margin-right:16px; color:#0066cc; -webkit-text-fill-color:initial;"></i>Proyek</h2>
         <div class="project-grid">
-          <div class="project-card" data-aos="flip-up"><i class="fas fa-router"></i><h4>Konfigurasi Mikrotik Dasar</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="50"><i class="fab fa-linux"></i><h4>Instalasi Linux</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="100"><i class="fas fa-desktop"></i><h4>Perakitan Komputer</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="150"><i class="fas fa-code"></i><h4>Website Portofolio</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="200"><i class="fas fa-network-wired"></i><h4>Simulasi Cisco Packet Tracer</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="250"><i class="fas fa-wifi"></i><h4>Konfigurasi Wireless Network</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="300"><i class="fas fa-server"></i><h4>Administrasi Server Dasar</h4></div>
-          <div class="project-card" data-aos="flip-up" data-aos-delay="350"><i class="fab fa-aws"></i><h4>AWS (Amazon Web Services)</h4></div>
+          <div class="project-card" data-aos="flip-up">
+            <i class="fas fa-router"></i>
+            <h4>Konfigurasi Mikrotik Dasar</h4>
+            <p>Saya telah melakukan konfigurasi dasar MikroTik seperti pengaturan IP address, DHCP server, NAT, dan firewall sederhana. Proyek ini membantu saya memahami routing dan manajemen bandwidth.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="50">
+            <i class="fab fa-linux"></i>
+            <h4>Instalasi Linux</h4>
+            <p>Saya menginstal dan mengkonfigurasi distribusi Linux (Ubuntu/Debian) untuk keperluan server dan desktop. Mempelajari manajemen paket, pengguna, serta service systemd.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+            <i class="fas fa-desktop"></i>
+            <h4>Perakitan Komputer</h4>
+            <p>Merakit PC dari komponen hardware, melakukan instalasi sistem operasi, serta troubleshooting perangkat keras. Proyek ini mengasah kemampuan analisis dan perbaikan komputer.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="150">
+            <i class="fas fa-code"></i>
+            <h4>Website Portofolio</h4>
+            <p>Membangun website portofolio pribadi ini menggunakan HTML, CSS, dan JavaScript dengan desain modern dan responsif. Menampilkan identitas, keahlian, dan proyek-proyek saya.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+            <i class="fas fa-network-wired"></i>
+            <h4>Simulasi Cisco Packet Tracer</h4>
+            <p>Membuat simulasi jaringan dengan Cisco Packet Tracer, mencakup konfigurasi switch, VLAN, routing statis & dinamis, serta pengujian konektivitas antar perangkat.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="250">
+            <i class="fas fa-wifi"></i>
+            <h4>Konfigurasi Wireless Network</h4>
+            <p>Mengatur jaringan wireless menggunakan access point MikroTik dan Ubiquiti, termasuk pengaturan keamanan WPA2, manajemen channel, serta monitoring sinyal.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+            <i class="fas fa-server"></i>
+            <h4>Administrasi Server Dasar</h4>
+            <p>Mengelola server Linux untuk layanan web (Apache/Nginx), DNS, dan file sharing (Samba). Saya juga mempelajari backup dan monitoring server secara dasar.</p>
+          </div>
+          <div class="project-card" data-aos="flip-up" data-aos-delay="350">
+            <i class="fab fa-aws"></i>
+            <h4>AWS (Amazon Web Services)</h4>
+            <p>Mempelajari layanan AWS seperti EC2, S3, dan IAM. Saya telah mencoba deploy aplikasi sederhana di cloud serta mengelola keamanan dasar di AWS.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -750,7 +791,7 @@
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
       <div class="container">
-        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#b0e0ff,#00e5ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem; text-align:center;" data-aos="fade-up">Pencapaian</h2>
+        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#004080,#0099cc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem; text-align:center;" data-aos="fade-up">Pencapaian</h2>
         <div class="achievement-grid">
           <div class="achieve-item" data-aos="zoom-in"><div class="number" data-count="18">0</div><div class="label">Project Selesai</div></div>
           <div class="achieve-item" data-aos="zoom-in" data-aos-delay="80"><div class="number" data-count="420">0</div><div class="label">Jam Belajar</div></div>
@@ -763,7 +804,7 @@
     <!-- CONTACT -->
     <section id="contact">
       <div class="container">
-        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#b0e0ff,#00e5ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:2rem;" data-aos="fade-up"><i class="fas fa-envelope" style="margin-right:16px; color:#00e5ff; -webkit-text-fill-color:initial;"></i>Kontak</h2>
+        <h2 style="font-size:2.4rem; font-weight:700; background:linear-gradient(135deg,#004080,#0099cc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:2rem;" data-aos="fade-up"><i class="fas fa-envelope" style="margin-right:16px; color:#0066cc; -webkit-text-fill-color:initial;"></i>Kontak</h2>
         <div class="contact-wrapper">
           <div class="contact-form" data-aos="fade-right">
             <form id="contactForm">
@@ -808,17 +849,17 @@
     });
 
     // ============================================================
-    // 2. PARTICLES.JS
+    // 2. PARTICLES.JS (soft white-blue)
     // ============================================================
     particlesJS('particles-js', {
       particles: {
-        number: { value: 70, density: { enable: true, value_area: 800 } },
-        color: { value: '#4fc3f7' },
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: '#0066cc' },
         shape: { type: 'circle' },
-        opacity: { value: 0.3, random: true },
+        opacity: { value: 0.2, random: true },
         size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: '#00e5ff', opacity: 0.15, width: 1 },
-        move: { enable: true, speed: 1.2, direction: 'none', random: true, straight: false, out_mode: 'out' }
+        line_linked: { enable: true, distance: 150, color: '#0066cc', opacity: 0.08, width: 1 },
+        move: { enable: true, speed: 1.0, direction: 'none', random: true, straight: false, out_mode: 'out' }
       },
       interactivity: {
         detect_on: 'canvas',
@@ -827,7 +868,7 @@
     });
 
     // ============================================================
-    // 3. MATRIX RAIN (canvas)
+    // 3. MATRIX RAIN (soft cyan)
     // ============================================================
     const canvas = document.getElementById('matrix-canvas');
     const ctx = canvas.getContext('2d');
@@ -842,15 +883,15 @@
     resizeMatrix();
     const matrixChars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZあいうえお';
     function drawMatrix() {
-      ctx.fillStyle = 'rgba(10, 15, 31, 0.05)';
+      ctx.fillStyle = 'rgba(245, 249, 255, 0.04)';
       ctx.fillRect(0, 0, w, h);
-      ctx.fillStyle = '#00e5ff';
+      ctx.fillStyle = '#0066cc';
       ctx.font = '16px monospace';
       for (let i = 0; i < drops.length; i++) {
         const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
         const x = i * 20;
         const y = drops[i] * 20;
-        ctx.fillStyle = `rgba(0, 229, 255, ${0.1 + Math.random() * 0.2})`;
+        ctx.fillStyle = `rgba(0, 102, 204, ${0.05 + Math.random() * 0.1})`;
         ctx.fillText(char, x, y);
         if (y > h && Math.random() > 0.975) drops[i] = 0;
         drops[i]++;
@@ -960,19 +1001,19 @@
       const message = document.getElementById('userMessage').value.trim();
 
       if (!name || !email || !message) {
-        feedback.innerHTML = '<span style="color:#ff7b89;"><i class="fas fa-exclamation-circle"></i> Semua field harus diisi.</span>';
+        feedback.innerHTML = '<span style="color:#cc3344;"><i class="fas fa-exclamation-circle"></i> Semua field harus diisi.</span>';
         return;
       }
       if (!email.includes('@') || !email.includes('.')) {
-        feedback.innerHTML = '<span style="color:#ff7b89;"><i class="fas fa-exclamation-circle"></i> Email tidak valid.</span>';
+        feedback.innerHTML = '<span style="color:#cc3344;"><i class="fas fa-exclamation-circle"></i> Email tidak valid.</span>';
         return;
       }
 
-      feedback.innerHTML = '<span style="color:#4fc3f7;"><i class="fas fa-spinner fa-spin"></i> Mengirim pesan...</span>';
+      feedback.innerHTML = '<span style="color:#0066cc;"><i class="fas fa-spinner fa-spin"></i> Mengirim pesan...</span>';
 
       // === SIMULASI KIRIM (ganti dengan EmailJS asli jika diperlukan) ===
       setTimeout(() => {
-        feedback.innerHTML = '<span style="color:#4fc3f7;"><i class="fas fa-check-circle"></i> Pesan berhasil dikirim! (simulasi)</span>';
+        feedback.innerHTML = '<span style="color:#0066cc;"><i class="fas fa-check-circle"></i> Pesan berhasil dikirim! (simulasi)</span>';
         contactForm.reset();
         setTimeout(() => { feedback.innerHTML = ''; }, 4000);
       }, 1800);
